@@ -5,18 +5,24 @@
   box-sizing: border-box;
 }
 
-:root{
-  --background-color: #fff,
+:root {
+  --background-color: #fff;
   --text-color: #555;
   --title-color: #000;
 }
 
-body{
+.dark-theme {
+  --background-color: #212121;
+  --text-color: #999;
+  --title-color: #fff;
+}
+
+body {
   background: var(--background-color);
   color: var(--text-color);
 }
 
-.header{
+.header {
   width: 100%;
   min-height: 100vh;
   padding: 0 8%;
@@ -24,35 +30,35 @@ body{
   overflow: hidden;
 }
 
-nav{
+nav {
   display: flex;
   align-items: center;
   padding: 10px 0;
 }
 
-.logo img{
-  width: 80px;  
+.logo img {
+  width: 80px;
 }
 
-nav ul{
+nav ul {
   width: 100%;
   text-align: right;
   list-style: none;
   margin-right: 50px;
 }
 
-nav ul li{
+nav ul li {
   display: inline-block;
   margin: 5px 15px;
 }
 
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   color: var(--text-color);
   font-weight: 500;
 }
 
-.toggle-btn{
+.toggle-btn {
   background: #4864ff;
   color: #fff;
   display: flex;
@@ -63,11 +69,48 @@ nav ul li a{
   border-radius: 20px;
   cursor: pointer;
 }
-.toggle-btn img{
+.toggle-btn img {
   width: 25px;
   margin-left: 10px;
   background-image: #fff;
 }
 
+.content {
+  margin-top: 10%;
+  max-width: 600px;
+}
 
+.content h1 {
+  font-size: 80px;
+  font-family: serif;
+  color: var(--title-color);
+  font-weight: 600;
+}
 
+.content h1 span {
+  font-family: serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.content a {
+  background: #4864ff;
+  color: #fff;
+  padding: 15px 70px;
+  border-radius: 30px;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+}
+
+.image-box img {
+  width: 350px;
+  display: block;
+}
+
+.image-box {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+}
